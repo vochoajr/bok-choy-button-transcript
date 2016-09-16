@@ -33,7 +33,7 @@ class EdXStudioSignInPage(PageObject):
         Unit page to be displayed
         """
         self.q(css='button').click()
-        EdXStudioUnitPage(self.browser).wait_for_page()  #goto_edit()
+        EdXStudioUnitPage(self.browser).wait_for_page()
 
     def login_enter_info(self, username, password):
         """
@@ -54,28 +54,3 @@ class EdXStudioUnitPage(PageObject):
 
     def is_browser_on_page(self):
         return "unit" in self.browser.title.lower()
-
-    '''
-    def goto_edit(self):
-        """
-        Click on the Edit button and wait for the
-        Edit page to load
-        """
-        self.q(css='action-item.action-edit').click()
-        EdXStudioEditPage(self.browser).wait_for_page()
-    '''
-
-'''
-class EdXStudioEditPage(PageObject):
-    """
-    edX Studio's Unit Edit page
-    """
-
-    # You do not navigate to this page directly
-    url = None
-
-    def is_browser_on_page(self):
-        print("here")
-        return true
-    
-'''
