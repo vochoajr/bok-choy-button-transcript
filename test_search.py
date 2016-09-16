@@ -14,8 +14,7 @@ class TestEdXStudio(WebAppTest):
         """
         super(TestEdXStudio, self).setUp()
         self.edxstudio_signin_page = EdXStudioSignInPage(self.browser)
-        #self.edxstudio_unit_page = EdXStudioUnitPage(self.browser)
-        #self.edxstudio_edit_page = EdXStudioEditPage(self.browser)
+        
     '''
     def test_page_existence(self):
         """
@@ -27,7 +26,7 @@ class TestEdXStudio(WebAppTest):
         """
         Make sure that you can search for something.
         """
-        self.edxstudio_signin_page.visit().login_enter_info('vicente.ochoa@nyu.edu', 'servius10')
+        self.edxstudio_signin_page.visit().login_enter_info('vicente.ochoa@nyu.edu', '****')
         
 
 
